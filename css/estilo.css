@@ -6,11 +6,19 @@ img{
     max-width: 100%;
 }
 
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 1em;
+    max-width: 980px;
+}
+
 .header{
-    background-image: url(../imgs/paisagem.jpg);
-    height: 80vh;
+    background: linear-gradient( to right, rgba(65, 65, 65, 0.7), rgba(65, 65, 65, 0.7) ), 
+                url(../imgs/pexels-la-miko-3681653.jpg);
+    height: 100vh;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -46,4 +54,40 @@ img{
 .header nav ul li a{ 
    text-decoration: none;
    color: black;
+}
+
+.header .inicio{
+    width: 100%;
+    color: white;
+    margin-top:60px;
+}
+
+.header .inicio .titulo-h1{
+    text-align: center;
+    font-size: 42px;
+}
+
+.header .inicio p{
+    text-align: center;
+    font-size: 16px;
+}
+
+.header .inicio button{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 15px 0;
+    color: white;
+}
+
+.header .inicio .saiba-mais{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.header .inicio .dowload{
+    background-color: rgba(243, 255, 6, 0.8);
+    border: none;
+    outline: none;
 }
