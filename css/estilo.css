@@ -91,3 +91,60 @@ img{
     border: none;
     outline: none;
 }
+
+.sobre-nos{
+    margin-top: 50px;
+}
+
+.sobre-nos h3{
+    text-align: center;
+    font-size: 32px;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.sobre-nos .text{
+    margin-top: 30px;
+    text-align: center;
+    color: #acabab;
+}
+
+.sobre-nos .barras-sobre-nos{
+    margin: 5em 10%;
+}
+
+.sobre-nos .text-type{
+    margin: 20px 0 40px;
+}
+
+.sobre-nos .text-type p, .sobre-nos i{
+    display: inline;
+}
+
+.sobre-nos .text-type i{
+    margin-right: 15px;
+}
+
+.sobre-nos .progress-60{
+    background-color: rgba(252, 82, 82, 0.8);
+}
+
+.sobre-nos .progress-60-text{
+    color: rgba(252, 82, 82, 0.8);
+}
+
+.sobre-nos .progress-82{
+    background-color: rgb(218, 222, 2);
+}
+
+.sobre-nos .progress-82-text{
+    color: rgb(218, 222, 2);
+}
+
+.sobre-nos .progress-86{
+    background-color: rgb(140, 0, 155);
+}
+
+.sobre-nos .progress-86-text{
+    color: rgb(140, 0, 155);
+}
