@@ -87,7 +87,7 @@ img{
 }
 
 .header .inicio .dowload{
-    background-color: rgba(243, 255, 6, 0.8);
+    background-color: rgb(218, 222, 2);
     border: none;
     outline: none;
 }
@@ -148,3 +148,28 @@ img{
 .sobre-nos .progress-86-text{
     color: rgb(140, 0, 155);
 }
+
+.portfolio{
+    background-color: #f5f4f4;
+    padding-top: 60px;
+}
+
+.portfolio h3{
+    text-align: center;
+    font-size: 32px;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.portfolio p{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.portfolio .projetos-img{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+
+
