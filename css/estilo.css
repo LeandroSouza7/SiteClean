@@ -16,10 +16,10 @@ img{
 .header{
     background: linear-gradient( to right, rgba(65, 65, 65, 0.7), rgba(65, 65, 65, 0.7) ), 
                 url(../imgs/pexels-la-miko-3681653.jpg);
-    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 50px;
 }
 
 .header .logo-text{
@@ -171,5 +171,47 @@ img{
     grid-template-columns: repeat(2, 50%);
 }
 
+.testemunhos{
+    background: linear-gradient( rgba(50, 8, 61, 0.9),  rgba(50, 8, 61, 0.9) ), 
+                url(../imgs/paisagem.jpg);
+    background-position: center top;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.testemunhos h3{
+    position: absolute;
+    top: 30px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.testemunhos .carousel .card-img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.testemunhos .carousel .card{
+    background-color: rgb(87, 64, 93);
+    padding: 25px;
+    color: white;
+}
+
+.testemunhos .carousel .carousel-indicators{
+    position: absolute;
+    bottom: -200px;
+}
 
 
