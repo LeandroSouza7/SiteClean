@@ -522,5 +522,62 @@ footer .creditos{
     padding: 20px 0;
 }
 
+@media screen and (min-width: 1024px){ 
+
+    .header{
+        height: 100vh;
+    }
+
+    .header nav{
+        background-color: transparent;
+    }
+
+    .header .logo-text{
+        float: left;
+        margin-left: 10%;
+    }
+
+    .header nav ul{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 13px;
+        margin-right: 10%;
+    }
+
+    .header nav ul li{
+        border-bottom: none;
+    }
+
+    .header .inicio{
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .header .inicio .titulo-h1{
+        font-size: 86px;
+    }
+
+    .header .inicio p{
+        margin-top: 20px;
+        padding: 0 250px;
+    }
+
+    .header .inicio .btns-header .saiba-mais{
+        width: 20%;
+        float: left;
+        margin: 20px 0 0 25%;
+    }
+
+    .header .inicio .btns-header .dowload{
+        width: 20%;
+        float: right;
+        margin: 20px 25% 0 0;
+    }
+    
+}
 
 
