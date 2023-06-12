@@ -350,6 +350,8 @@ img{
     padding: 50px;
     background: linear-gradient( rgba(219, 222, 10, 0.8),  rgba(219, 222, 10, 0.8) ), 
                 url(../imgs/paisagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .numeros .div-meio{
@@ -365,7 +367,7 @@ img{
 
 .time{
     background-color: #f5f4f4;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .time h3{
@@ -577,7 +579,101 @@ footer .creditos{
         float: right;
         margin: 20px 25% 0 0;
     }
+
+    .sobre-nos .barras-sobre-nos{
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobre-nos .progress{
+        width: 300px;
+    }
     
+    .sobre-nos .barras{
+        margin: 0 20px;
+    }
+
+    .portfolio .projetos-img{
+        display: flex;
+    }
+
+    .portfolio .projetos-img img{
+        min-height: 300px;
+    }
+
+    .servicos article{
+        display: flex;
+    }
+
+    .numeros{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 80px;
+    }
+
+    .numeros .div-meio{
+        margin: 0;
+    }
+
+    .time .card-time{
+        display: flex;
+    }
+
+    .contato .info-contato{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+
+    }
+
+    .contato .info-contato address, .contato .info-contato .suporte, .contato .info-contato .redes-sociais{
+        margin: 0;
+    }
+
+    .contato form fieldset{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(4, 4fr);
+    }
+
+    .contato form .div-nome{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        margin-right: 20px;
+    }
+
+    .contato form .div-email{
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        margin-right: 20px;
+    }
+
+    .contato form .div-assunto{
+        grid-column: 3 / 4;
+        grid-row: 1 / 4;
+    }
+
+    .contato form .div-msg{
+        grid-column: 1 / -1;
+        grid-row: 2 / 5;
+    }
+
+    .contato form .btn-submit{
+        grid-column:  3 / 3;
+        grid-row: 4 / 4;
+    }
+
+    footer .footer-informacoes{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .creditos{
+        text-align: center;
+    }
 }
 
 

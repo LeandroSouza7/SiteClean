@@ -65,20 +65,26 @@
 
 
           <div class="barras-sobre-nos">
+            <div class="barras">
               <div class="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                   <div class="progress-bar progress-60" style="width: 60%">60%</div>
               </div>
               <div class="text-type progress-60-text"><i class="fa-solid fa-a"></i><p>Tipografia</p></div>
+            </div>
 
+            <div class="barras">
               <div class="progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
                   <div class="progress-bar progress-82" style="width: 82%">82%</div>
               </div>
               <div class="text-type progress-82-text"><i class="fa-solid fa-pen"></i><p>Design</p></div>
+            </div>
 
+            <div class="barras">
               <div class="progress" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
                   <div class="progress-bar progress-86" style="width: 86%">86%</div>
               </div>
               <div class="text-type progress-86-text"><i class="fa-solid fa-code"></i><p>Desenvolvimento</p></div>
+            </div>
           </div>
         </section>
 
@@ -270,49 +276,53 @@
         <section class="contato container">
             <h3>Contate-nos!</h3>
 
-            <address>
-                <p class="adr">Endereço</p>
-                <p>Street 222B, Baker Street,</p>
-                <p>London</p>
-            </address>
+            <div class="info-contato">
+              <address>
+                  <p class="adr">Endereço</p>
+                  <p>Street 222B, Baker Street,</p>
+                  <p>London</p>
+              </address>
 
-            <div class="suporte">
-                <p class="adr">Suporte:</p>
-                <p>99999-9999</p>
-                <p>user@gmail.com</p>
-            </div>
+              <div class="suporte">
+                  <p class="adr">Suporte:</p>
+                  <p>99999-9999</p>
+                  <p>user@gmail.com</p>
+              </div>
 
-            <div class="redes-sociais">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <div class="redes-sociais">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
             </div>
 
 
             <form action="#" name="form" method="post">
                 <fieldset>
 
-                    <div>
+                    <div class="div-nome">
                         <label name="nome">Nome (Obrigatório)</label>
                         <input type="text" id="nome" required name="nome" placeholder="Digite seu nome">
                     </div>
 
-                    <div>
+                    <div class="div-email">
                         <label name="email">Email (Obrigatório)</label>
                         <input type="text" id="email" required name="email" placeholder="Digite seu email">
                     </div>
 
-                    <div>
+                    <div class="div-assunto">
                         <label name="assunto">Assunto</label>
                         <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
                     </div>
 
-                    <div>
+                    <div class="div-msg">
                         <label name="mensagem">Mensagem (Obrigatório)</label>
                         <textarea style="resize:none" id="mensagem" required name="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
                     </div>
 
-                    <input type="submit" id="submit">
+                    <div class="btn-submit">
+                      <input type="submit" id="submit">
+                    </div>
                 </fieldset>
             </form>
         </section>
@@ -320,7 +330,7 @@
 
         <footer>
           <div class="container">
-            <div>
+            <div class="footer-informacoes">
                 <div>
                     <h6>Produtos</h6>
                     <ul>
