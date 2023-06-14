@@ -28,9 +28,13 @@ img{
     padding: 25px;
  }
 
+ .no-js .header .hamburguer-btn{
+    display: none;
+ }
+
 
 .js .header .hamburguer-btn{
-    display: block !important;
+    display: block;
 }
 
 .js nav{
