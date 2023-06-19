@@ -23,8 +23,13 @@ img{
     padding-bottom: 50px;
 }
 
+.header .logo-text{
+    color: white;
+    font-weight: bold;
+}
 
- header .informacoes-principais{
+
+ .header .informacoes-principais{
     display: flex;
     justify-content: space-between;
     padding: 25px;
@@ -44,6 +49,7 @@ img{
 
 .js .header .hamburguer-btn i{
     font-size: 22px;
+    color: white;
 }
 
 .js nav{
@@ -81,8 +87,14 @@ img{
 }
 
 .header nav ul li a{ 
-   text-decoration: none;
-   color: black;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s color;
+ 
+ }
+
+.header nav ul li a:hover{
+    color: rgb(251, 255, 1);
 }
 
 .header .inicio{
@@ -576,7 +588,6 @@ footer .creditos{
     }
 
     .header .logo-text{
-        /* float: left; */
         margin-left: 10%;
     }
 
@@ -590,6 +601,11 @@ footer .creditos{
 
     .header nav ul li{
         border-bottom: none;
+    }
+
+    .header nav ul li a{
+        color: white;
+        font-weight: 600;
     }
 
     .header .inicio{
