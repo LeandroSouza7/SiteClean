@@ -19,8 +19,10 @@ img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding-bottom: 50px;
 }
+
 
  header .informacoes-principais{
     display: flex;
@@ -35,6 +37,13 @@ img{
 
 .js .header .hamburguer-btn{
     display: block;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.js .header .hamburguer-btn i{
+    font-size: 22px;
 }
 
 .js nav{
@@ -42,14 +51,14 @@ img{
     height: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: height 0.5s linear;
+    transition: height 0.3s linear;
 }
 
 .js .open{
     width: 100%;
     height: 363px;
     visibility:visible;
-    transition: height 0.5s linear;
+    transition: height 0.5s linear; 
 }
 
 .header nav{
@@ -412,6 +421,8 @@ img{
     width: 100%;
     display: flex;
     margin: 50px 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .time .card-time .cards h5{
@@ -557,10 +568,15 @@ footer .creditos{
 
     .header nav{
         background-color: transparent;
+        position: absolute;
+        top: 1px;
+        width: 100%;
+        height: 100%;
+        visibility: visible;
     }
 
     .header .logo-text{
-        float: left;
+        /* float: left; */
         margin-left: 10%;
     }
 

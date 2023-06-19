@@ -8,10 +8,13 @@
 
     function desabilitaHbgMenu(){
         $menu.style.display = 'none';
+        $nav.style.display = 'block';
     }
 
     if(window.innerWidth >= 1024){
         desabilitaHbgMenu();
+    }else{
+        menu();
     }
 
     window.addEventListener('resize', function(){
