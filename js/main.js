@@ -3,42 +3,66 @@
     $body.classList.remove('no-js');
     $body.classList.add('js');
 
-    let $menu = document.querySelector('.hamburguer-btn');
     let $nav = document.querySelector('nav');
+    let $btn = document.querySelector('.hamburguer-btn');
 
-    function desabilitaHbgMenu(){
-        $menu.style.display = 'none';
-        $nav.style.display = 'block';
+    let maxWidth = 1024;
+
+    let _opened = false;
+    let _this = this;
+
+    $btn.removeAttribute('style');
+
+    window.addEventListener('resize', e => {
+        if(window.innerWidth > maxWidth){
+            $nav.removeAttribute('style');
+            _opened = true;
+        }else if(!$nav.getAttribute('style')){
+            closeMenu();
+        }       
+    })
+
+    if(window.innerWidth <= maxWidth){
+        closeMenu();
     }
 
-    if(window.innerWidth >= 1024){
-        desabilitaHbgMenu();
-    }else{
-        menu();
-    }
+    $btn.addEventListener('click', openOrClose);
 
-    window.addEventListener('resize', function(){
-        if(window.innerWidth >= 1024){
-            desabilitaHbgMenu();
+    function openOrClose(){
+        if(!_opened){
+            openMenu()
         }else{
-            menu();
+            closeMenu();
         }
-    });
+    }
 
-    function menu(){
-        let open = false;
+    function openMenu(){
+        let _top = $nav.getBoundingClientRect().top + 'px';
 
-        $menu.style.display = 'block';
+        let _style = {
+            maxHeight: 'calc(100vh - ' + _top + ')',
+            overflow: 'hidden'
+        };
 
-        $menu.addEventListener('click', function(){
-            if(!open){
-                open = true;
-                $nav.classList.add('open');
-            }else{
-                open = false;
-                $nav.classList.remove('open');
-            }
+        applyStyleToNav(_style);
+
+        _opened = true;
+    }
+
+    function applyStyleToNav(_style){
+        Object.keys(_style).forEach( stl => {
+            $nav.style[stl] = _style[stl];
         })
     }
-   
+
+    function closeMenu(){
+        let _style = {
+            maxHeight: '0',
+            overflow: 'hidden'
+        };
+
+        applyStyleToNav(_style);
+            
+        _opened = false;
+    }    
 })()
